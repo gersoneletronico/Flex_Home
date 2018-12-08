@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity_Principal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btng1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btns"
+                android:drawableBottom="@mipmap/btn_off"
+                android:gravity="center"
+                android:padding="5dp"
+                android:requiresFadingEdge="none|horizontal"
+                android:text="Grupo 1"
+                android:textColor="@android:color/background_light"
+                android:textIsSelectable="false"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btng2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btns"
+                android:drawableBottom="@mipmap/btn_off"
+                android:gravity="center"
+                android:padding="5dp"
+                android:requiresFadingEdge="none|horizontal"
+                android:text="Grupo 2"
+                android:textColor="@android:color/background_light"
+                android:textIsSelectable="false"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btng3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btns"
+                android:drawableBottom="@mipmap/btn_off"
+                android:gravity="center"
+                android:padding="5dp"
+                android:requiresFadingEdge="none|horizontal"
+                android:text="Grupo 3"
+                android:textColor="@android:color/background_light"
+                android:textIsSelectable="false"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="DISPOSITIVO 1"
+            android:textColor="@android:color/background_light"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/laydimmer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ajuste Gradativo" />
+
+            <SeekBar
+                android:id="@+id/dimmer1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/laydimmer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ajuste Gradativo" />
+
+            <SeekBar
+                android:id="@+id/dimmer2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/laydimmer3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ajuste Gradativo" />
+
+            <SeekBar
+                android:id="@+id/dimmer3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/laydimmer4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ajuste Gradativo" />
+
+            <SeekBar
+                android:id="@+id/dimmer4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:max="10"
+                android:progress="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnl9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/btns"
+            android:drawableRight="@mipmap/btn_off"
+            android:gravity="center"
+            android:padding="5dp"
+            android:requiresFadingEdge="none|horizontal"
+            android:text="Dispositivo 1"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>

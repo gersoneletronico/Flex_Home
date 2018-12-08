@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Confugurar_btns">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btns"
+            android:gravity="center"
+            android:text="Defina de quer maneira os acionamentos de grupos iram funcionar  "
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/modo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="top|center_vertical"
+                android:text="1° Modo quando o botão do grupo for acionado (ON) os dispositivos que estiverem na configuração de acionamentos de grupo marcado (checado) e estiverem em OFF na tela principal iram ser acionado (ON) e os que não estiverem marcados (checado) e na tela principal estiver em ON iram para OFF, quando desligar o botão de grupo (OFF) todos dispositivos voltam para situação anterior."
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/modo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="top|center_vertical"
+                android:text="2° Modo quando o botão do grupo for acionado (ON) os dispositivos que estiverem na configuração de acionamentos de grupo marcado (checado) e estiverem em OFF na tela principal iram ser acionado (ON) e os que não estiverem marcados (checado) fica na mesma condição, quando desligar o botão de grupo os dispositivos acionados desligam (OFF)."
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/modo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="top|center_vertical"
+                android:text="3° Modo quando o botão do grupo for acionado (ON) os dispositivos que estiverem na configuração de acionamentos de grupo marcado (checado) e estiverem em OFF na tela principal iram ser acionado (ON) e os que não estiverem marcados (checado) e na tela principal estiver em ON iram para OFF, quando desligar o botão de grupo (OFF) a situação atual é invertida ON -> OFF e OFF -> ON."
+                android:textStyle="italic" />
+        </RadioGroup>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

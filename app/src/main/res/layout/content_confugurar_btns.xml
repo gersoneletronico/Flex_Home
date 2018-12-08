@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Confugurar_btns">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Aqui Você pode renomear os grupos"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editG1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editG2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editG3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="5dp">
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="5dp"
+                   android:gravity="center">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:text="Rótulos do Botão     "
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:text="IPs"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:text="Saídas"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:text="HA"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip1"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas1"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:checked="false" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip2"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas2"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip3"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas3"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo4"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip4"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn4"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas4"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn4"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo5"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip5"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn5"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas5"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn5"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo6"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn6"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip6"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn6"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas6"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn6"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo7"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn7"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip7"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn7"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas7"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn7"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo8"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn8"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip8"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn8"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas8"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn8"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo9"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn9"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip9"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn9"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas9"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn9"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo10"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn10"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip10"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn10"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas10"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn10"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo11"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn11"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip11"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn11"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas11"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn11"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo12"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn12"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip12"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn12"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas12"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn12"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo13"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn13"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip13"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn13"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas13"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn13"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo14"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn14"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip14"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn14"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas14"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn14"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo15"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn15"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip15"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn15"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas15"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn15"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo16"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn16"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip16"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn16"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas16"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn16"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo17"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn17"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip17"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn17"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas17"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn17"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo18"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn18"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip18"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn18"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas18"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn18"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo19"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn19"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip19"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn19"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas19"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn19"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="7dp"
+                   android:background="@drawable/btns"
+                   android:gravity="center">
+
+                   <EditText
+                       android:id="@+id/editrotulo20"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:ems="1"
+                       android:gravity="center"
+                       android:inputType="textPersonName"
+                       android:textColor="@android:color/background_light" />
+
+                   <TextView
+                       android:id="@+id/txtipbtn20"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:onClick="clicktxtip20"
+                       android:text="IP1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <TextView
+                       android:id="@+id/txtsaidabtn20"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:gravity="center"
+                       android:onClick="clicksidas20"
+                       android:text="S1"
+                       android:textColor="@android:color/background_light"
+                       android:textSize="20sp" />
+
+                   <CheckBox
+                       android:id="@+id/checkbtn20"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center" />
+
+               </TableRow>
+
+
+           </TableLayout>
+    </LinearLayout>
+</ScrollView>
